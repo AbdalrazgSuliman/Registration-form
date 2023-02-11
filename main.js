@@ -16,6 +16,5 @@ let qrgen = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${ema
 form.onsubmit = function(e){
 
  qrimg.src = qrgen;
- qrimg.style.opacity = "1.0"
 e.preventDefault()
 }; 
