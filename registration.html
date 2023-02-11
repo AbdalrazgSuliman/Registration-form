@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link main css file -->
+    <link rel="stylesheet" href="main.css">
+    <title>event Register</title>
+
+</head>
+<body>
+    <!-- start header -->
+    <header>
+      
+            <a href=""><h2>Home</h2></a>
+            <a href=""><h2>Regisrtion</h2></a>
+            <a href=""><h2>Verifcation</h2></a>
+            <a href=""><h2>Help</h2></a>
+        
+    </header>
+    <!-- end header -->
+
+
+    <!-- start form container -->
+    <div class="container">
+
+
+        <!-- registration form Start -->
+        <form action="" class="form-style">
+            <h1>ID GENERATION</h1>
+
+            <label>Full Name</label>
+            <input type="text" value="" required placeholder="exapmle : Ahmed Hassan Mohammed">
+
+
+
+            <label>Email</label>
+            <input type="email" class="email" value=""  required placeholder="Examle@mail.com">
+
+            <label>Phone Number</label>
+            <input type="text" value="" required placeholder="+249xxxxxxxxx">
+
+            <div class="btn-box">
+                
+                <input class="btn" type="radio" value="male" name="male" id="m" required>
+                <label class="btn"  for="m">Male</label>
+                <input class="btn"  type="radio" value="female" name="male" id="f" required>
+                <label class="btn" for="f">Female</label>
+
+            </div>
+    
+            <input type="submit" value="Generate ID" required>
+        </form>
+         <!-- registration form end -->
+
+        <div class="hr"></div>
+
+
+         <!-- QR CODE FORM START -->
+         <form class="form-style" action="" >
+            <div class="qrimgcont">
+                <img  class="qr"src="./qr.jpg" alt="QR CODE"  width="200" height="200">
+            </div>
+            <label>ID</label>
+            <input type="text" readonly>
+
+
+            <label>Email</label>
+            <input type="email" readonly>
+
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Send Email">
+         </form>
+          <!-- QR CODE FORM END -->
+    </div>
+
+    <!-- end forms container -->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
