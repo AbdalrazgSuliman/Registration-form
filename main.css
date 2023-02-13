@@ -1,0 +1,242 @@
+/* variables for main color */
+
+:root {
+    --maincolor: #11559e;
+    --mainborder: 6px;
+    --btnwidth:360px;
+    --secondcolor :#262626;
+    --hovercolor:#9b9b9b;
+}
+
+*{
+   font-family:  "Open Sans", sans-serif;
+   box-sizing :border-box;
+
+} 
+
+/* header styling */
+header {
+background-color: var(--maincolor);
+display: flex;
+border-radius:var(--mainborder)
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    margin-left: 40px;
+}
+
+/* class for selected page */
+.active {
+    opacity: 1.0 !important;
+
+}
+
+.container {
+    /* width: 1170px;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+/* container comtains the for,s */
+.container .form-style {
+    display:grid;
+    flex-direction: column;
+}
+
+/* Genrate iD  */
+.form-style h1 {
+    justify-self: center;
+}
+
+.form-style input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: var(--mainborder);
+    padding: 10px;
+    border: 0.5px black solid;;
+    width: 200px;
+    width: var( --btnwidth);
+    font-size: 16px;
+}
+
+
+.form-style label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-style input :focus {
+    outline: none;
+}
+
+
+/* the button box contaain male and female */
+ .btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+ }
+ 
+/* male and female start */
+ .btn-box input {
+    width: 10px;
+    margin: 0;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+
+
+
+ form .btn-box label {
+    background-color: var(--maincolor);
+    padding: 10px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    border-radius: var(--mainborder);
+ }
+/* male and female checked color */ 
+ .btn-box input:checked +   .btn{
+    background-color:  var(--hovercolor);
+    
+ }
+
+/* submit button styling */
+ [type="submit"]{
+    border: none !important;
+    background-color: var(--secondcolor);
+    color: white;
+    font-size: 1.2rem;
+   
+ }
+/* submit on hover */
+ [type="submit"]:hover{
+    background-color: var(--hovercolor);
+ }
+
+ /* male and femal in hover */
+ .btn:hover {
+    background-color: var(--hovercolor);
+ }
+
+/* to center qr code img */
+ .qrimgcont {
+    justify-self: center;
+    margin-top: 10px;
+ }
+
+ .qrimgcont img {
+    transition: 0.2s;
+    
+ }
+
+
+ /* horizntal line */
+ .hr {
+    border: none;
+    background-color: var(--maincolor);
+    height: 758px;
+    width: 1px;
+ }
+
+
+ textarea {
+    resize: none;
+    padding: 10px;
+ }
+
+
+ /* cross icon svg*/
+ .cross{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+ }
+
+
+
+
+/* email sent message styling start */
+ .messeage{
+    display: flex;
+    background-color: var(--maincolor);
+    color: white;
+    padding: 6px;
+    border-radius: var(--mainborder);
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+  
+ }
+
+ .messeage p:nth-child(1){
+    margin-bottom:0 ;
+ }
+
+
+
+ .messeage p:nth-child(2){
+    margin-top:0 ;
+ }
+
+
+.messeage i {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+
+
+
+
+/* email sent message styling end */
+
+
+
+ /* respnsiving the desgin */
+
+
+/* Small */
+
+@media (max-width:767px){
+    .container  {
+        flex-direction: column;
+    }
+
+
+   .hr{
+        height: 80px;
+        transform: rotate(90deg);
+    }
+}
+ 
+
+/* Medium */
+@media (min-width: 768px) {
+    .container {
+  
+    }
+
+}
+
+/* and to full */
+
+@media (min-width: 992px) {
+.container {
+
+}
+}
+
+/* sasa */
