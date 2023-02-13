@@ -1,5 +1,5 @@
 //var for froms
-let form =document.getElementsByClassName("form-style")
+let form = document.getElementsByClassName("form-style")
 //var for get email text field
 let email = document.getElementsByClassName("email")[0]
 //var for phone number

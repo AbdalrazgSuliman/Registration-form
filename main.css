@@ -14,8 +14,13 @@
 
 } 
 
+/* Body Styling */ 
+body{
+
+}
 /* header styling */
 header {
+padding:  18px 0 18px 0;
 background-color: var(--maincolor);
 display: flex;
 border-radius:var(--mainborder)
@@ -95,7 +100,9 @@ header a {
     margin-bottom: 20px;
  }
 
-
+.required{
+   color: red;
+}
 
  form .btn-box label {
     background-color: var(--maincolor);
@@ -211,23 +218,39 @@ header a {
 /* Small */
 
 @media (max-width:767px){
-    .container  {
-        flex-direction: column;
-    }
-
-
-   .hr{
-        height: 80px;
-        transform: rotate(90deg);
-    }
+.container  {
+   flex-direction: column;
+   width: 90%;
+   justify-content: center;
+   align-items: center;
 }
- 
+header{
+   padding: 15.5px 5px 15.5px 0;
+}
+header a{
+   margin-left: 22px;
+   font-size: 16px;
+}
+.container .form-style{
+   max-width: 130%;
+}
+.container .form-style input{
+
+    width: 320px;
+}
+
+.hr{
+      height: 80px;
+      transform: rotate(90deg);
+   }
+}
+
 
 /* Medium */
 @media (min-width: 768px) {
-    .container {
-  
-    }
+.container {
+
+}
 
 }
 
