@@ -9,6 +9,8 @@ let qrimg = document.getElementsByClassName("qr")[0]
 
 
 
+//send status for registration form
+let send_staus = false;
 
 
 
@@ -16,14 +18,19 @@ let qrimg = document.getElementsByClassName("qr")[0]
 form[0].onsubmit = function(e){
     generateId();
     returnId();
+    send_staus = true;
 
 
 e.preventDefault()
 }; 
-
+//submenting second form
 form[1].onsubmit = function(e){
-    sendVerfication();
-    e.preventDefault()
+    if(send_staus === true ){
+     sendVerfication();
+     e.preventDefault ();
+    }else {
+        e.preventDefault();
+    }
 }
 
 
