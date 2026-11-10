@@ -201,7 +201,7 @@ function returnId(){
 
 function sendVerfication(){
     //messages for users, made here so they have the name the user typed
-    let message1 = `An email has been sent to ${fullName.value.trim()} to attend the Made In Sudan event`
-    let message2 = `Welcome ${fullName.value.trim()} in our event`
+    let message1 = `An email has been sent to ${fullName.value.trim()} to attend Made in Sudan, the IEEE event`
+    let message2 = `Welcome ${fullName.value.trim()} to Made in Sudan`
     form[1][2].value = message1;
 }
