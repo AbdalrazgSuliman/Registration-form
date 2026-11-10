@@ -6,6 +6,7 @@
     --btnwidth:360px;
     --secondcolor :#262626;
     --hovercolor:#9b9b9b;
+    --errorcolor:#d93025;
 }
 
 *{
@@ -172,6 +173,42 @@ header a {
  }
 
 
+
+
+/* form validation errors start */
+
+/* red border for wrong fields */
+.form-style input.invalid {
+    border: 1px solid var(--errorcolor);
+    background-color: #fdecea;
+}
+
+/* red ring around male and female when none is chosen */
+.btn-box.invalid label {
+    box-shadow: 0 0 0 2px var(--errorcolor);
+}
+
+/* red message under the wrong field */
+.error-msg {
+    color: var(--errorcolor);
+    font-size: 14px;
+    max-width: var(--btnwidth);
+    margin-top: -14px;
+    margin-bottom: 14px;
+}
+
+/* hide the message box when there is no error */
+.error-msg:empty {
+    display: none;
+}
+
+/* qr error sits under the image, not under an input */
+.qr-error {
+    margin-top: 10px;
+    justify-self: center;
+}
+
+/* form validation errors end */
 
 
 /* email sent message styling start */
